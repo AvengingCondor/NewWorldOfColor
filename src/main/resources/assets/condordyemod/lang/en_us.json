@@ -14,5 +14,22 @@
   "item.condordyemod.dye_indigo": "Indigo Dye",
   "item.condordyemod.dye_mauve": "Mauve Dye",
   "item.condordyemod.dye_fuchsia": "Fuchsia Dye",
-  "item.condordyemod.dye_light_brown": "Light Brown Dye"
+  "item.condordyemod.dye_light_brown": "Light Brown Dye",
+
+  "block.condordyemod.crimson_wool": "Crimson Wool",
+  "block.condordyemod.vermilion_wool": "Vermilion Wool",
+  "block.condordyemod.maroon_wool": "Maroon Wool",
+  "block.condordyemod.coral_wool": "Coral Wool",
+  "block.condordyemod.amber_wool": "Amber Wool",
+  "block.condordyemod.chartreuse_wool": "Chartreuse Wool",
+  "block.condordyemod.olive_wool": "Olive Wool",
+  "block.condordyemod.jade_wool": "Jade Wool",
+  "block.condordyemod.light_green_wool": "Light Green Wool",
+  "block.condordyemod.teal_wool": "Teal Wool",
+  "block.condordyemod.seafoam_wool": "Seafoam Wool",
+  "block.condordyemod.azure_wool": "Azure Wool",
+  "block.condordyemod.indigo_wool": "Indigo Wool",
+  "block.condordyemod.mauve_wool": "Mauve Wool",
+  "block.condordyemod.fuchsia_wool": "Fuchsia Wool",
+  "block.condordyemod.light_brown_wool": "Light Brown Wool"
 }

@@ -1,5 +1,6 @@
 package net.avengingcondor.dyemod;
 
+import net.avengingcondor.dyemod.block.ModBlocks;
 import net.avengingcondor.dyemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -39,6 +40,7 @@ public class DyeMod
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -72,6 +74,24 @@ public class DyeMod
             event.accept(ModItems.DYE_MAUVE);
             event.accept(ModItems.DYE_FUCHSIA);
             event.accept(ModItems.DYE_LIGHT_BROWN);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
+            event.accept(ModBlocks.CRIMSON_WOOL);
+            event.accept(ModBlocks.VERMILION_WOOL);
+            event.accept(ModBlocks.MAROON_WOOL);
+            event.accept(ModBlocks.CORAL_WOOL);
+            event.accept(ModBlocks.AMBER_WOOL);
+            event.accept(ModBlocks.CHARTREUSE_WOOL);
+            event.accept(ModBlocks.OLIVE_WOOL);
+            event.accept(ModBlocks.JADE_WOOL);
+            event.accept(ModBlocks.LIGHT_GREEN_WOOL);
+            event.accept(ModBlocks.TEAL_WOOL);
+            event.accept(ModBlocks.SEAFOAM_WOOL);
+            event.accept(ModBlocks.AZURE_WOOL);
+            event.accept(ModBlocks.INDIGO_WOOL);
+            event.accept(ModBlocks.MAUVE_WOOL);
+            event.accept(ModBlocks.FUCHSIA_WOOL);
+            event.accept(ModBlocks.LIGHT_BROWN_WOOL);
         }
     }
 
