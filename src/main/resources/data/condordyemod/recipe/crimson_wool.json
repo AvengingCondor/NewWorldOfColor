@@ -1,0 +1,109 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "condordyemod:dye_crimson"
+    },
+    [
+      {
+        "item": "minecraft:black_wool"
+      },
+      {
+        "item": "minecraft:blue_wool"
+      },
+      {
+        "item": "minecraft:brown_wool"
+      },
+      {
+        "item": "minecraft:cyan_wool"
+      },
+      {
+        "item": "minecraft:gray_wool"
+      },
+      {
+        "item": "minecraft:green_wool"
+      },
+      {
+        "item": "minecraft:light_blue_wool"
+      },
+      {
+        "item": "minecraft:light_gray_wool"
+      },
+      {
+        "item": "minecraft:lime_wool"
+      },
+      {
+        "item": "minecraft:magenta_wool"
+      },
+      {
+        "item": "minecraft:orange_wool"
+      },
+      {
+        "item": "minecraft:pink_wool"
+      },
+      {
+        "item": "minecraft:purple_wool"
+      },
+      {
+        "item": "minecraft:red_wool"
+      },
+      {
+        "item": "minecraft:yellow_wool"
+      },
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "condordyemod:vermilion_wool"
+      },
+      {
+        "item": "condordyemod:amber_wool"
+      },
+      {
+        "item": "condordyemod:chartreuse_wool"
+      },
+      {
+        "item": "condordyemod:olive_wool"
+      },
+      {
+        "item": "condordyemod:jade_wool"
+      },
+      {
+        "item": "condordyemod:light_green_wool"
+      },
+      {
+        "item": "condordyemod:seafoam_wool"
+      },
+      {
+        "item": "condordyemod:teal_wool"
+      },
+      {
+        "item": "condordyemod:azure_wool"
+      },
+      {
+        "item": "condordyemod:indigo_wool"
+      },
+      {
+        "item": "condordyemod:fuchsia_wool"
+      },
+      {
+        "item": "condordyemod:mauve_wool"
+      },
+      {
+        "item": "condordyemod:maroon_wool"
+      },
+      {
+        "item": "condordyemod:coral_wool"
+      },
+      {
+        "item": "condordyemod:light_brown_wool"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "condordyemod:crimson_wool"
+  }
+}

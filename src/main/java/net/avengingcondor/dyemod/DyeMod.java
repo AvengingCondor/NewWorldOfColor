@@ -1,6 +1,7 @@
 package net.avengingcondor.dyemod;
 
 import net.avengingcondor.dyemod.block.ModBlocks;
+import net.avengingcondor.dyemod.item.ModCreativeModeTabs;
 import net.avengingcondor.dyemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -39,6 +40,8 @@ public class DyeMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -57,7 +60,7 @@ public class DyeMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        /*if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.DYE_CRIMSON);
             event.accept(ModItems.DYE_VERMILION);
             event.accept(ModItems.DYE_MAROON);
@@ -92,7 +95,7 @@ public class DyeMod
             event.accept(ModBlocks.MAUVE_WOOL);
             event.accept(ModBlocks.FUCHSIA_WOOL);
             event.accept(ModBlocks.LIGHT_BROWN_WOOL);
-        }
+        }*/
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
