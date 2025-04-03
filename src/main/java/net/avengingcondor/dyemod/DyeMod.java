@@ -60,42 +60,7 @@ public class DyeMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        /*if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.DYE_CRIMSON);
-            event.accept(ModItems.DYE_VERMILION);
-            event.accept(ModItems.DYE_MAROON);
-            event.accept(ModItems.DYE_CORAL);
-            event.accept(ModItems.DYE_AMBER);
-            event.accept(ModItems.DYE_CHARTREUSE);
-            event.accept(ModItems.DYE_OLIVE);
-            event.accept(ModItems.DYE_JADE);
-            event.accept(ModItems.DYE_LIGHT_GREEN);
-            event.accept(ModItems.DYE_TEAL);
-            event.accept(ModItems.DYE_SEAFOAM);
-            event.accept(ModItems.DYE_AZURE);
-            event.accept(ModItems.DYE_INDIGO);
-            event.accept(ModItems.DYE_MAUVE);
-            event.accept(ModItems.DYE_FUCHSIA);
-            event.accept(ModItems.DYE_LIGHT_BROWN);
-        }
-        if(event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
-            event.accept(ModBlocks.CRIMSON_WOOL);
-            event.accept(ModBlocks.VERMILION_WOOL);
-            event.accept(ModBlocks.MAROON_WOOL);
-            event.accept(ModBlocks.CORAL_WOOL);
-            event.accept(ModBlocks.AMBER_WOOL);
-            event.accept(ModBlocks.CHARTREUSE_WOOL);
-            event.accept(ModBlocks.OLIVE_WOOL);
-            event.accept(ModBlocks.JADE_WOOL);
-            event.accept(ModBlocks.LIGHT_GREEN_WOOL);
-            event.accept(ModBlocks.TEAL_WOOL);
-            event.accept(ModBlocks.SEAFOAM_WOOL);
-            event.accept(ModBlocks.AZURE_WOOL);
-            event.accept(ModBlocks.INDIGO_WOOL);
-            event.accept(ModBlocks.MAUVE_WOOL);
-            event.accept(ModBlocks.FUCHSIA_WOOL);
-            event.accept(ModBlocks.LIGHT_BROWN_WOOL);
-        }*/
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
