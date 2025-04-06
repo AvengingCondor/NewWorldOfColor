@@ -4,7 +4,7 @@
   "group": "wool",
   "ingredients": [
     {
-      "item": "condordyemod:dye_crimson"
+      "item": "condordyemod:dye_vermilion"
     },
     {
       "tag": "minecraft:wool"
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "condordyemod:crimson_wool"
+    "id": "condordyemod:vermilion_wool"
   }
 }

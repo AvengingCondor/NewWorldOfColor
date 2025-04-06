@@ -50,6 +50,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAROON_WOOL);
                         output.accept(ModBlocks.CORAL_WOOL);
                         output.accept(ModBlocks.LIGHT_BROWN_WOOL);
+                        output.accept(ModBlocks.CRIMSON_TERRACOTTA);
                     }).build());
 
     public static void register(IEventBus eventBus) {

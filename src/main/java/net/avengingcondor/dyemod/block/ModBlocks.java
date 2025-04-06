@@ -65,7 +65,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LIGHT_BROWN_WOOL = registerBlock("light_brown_wool",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-
+    public static final DeferredBlock<Block> CRIMSON_TERRACOTTA = registerBlock("crimson_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
