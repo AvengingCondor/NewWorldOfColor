@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "condordyemod:block/fuchsia_terracotta"
+    }
+  }
+}

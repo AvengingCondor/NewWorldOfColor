@@ -1,6 +1,21 @@
 {
   "replace": false,
   "values": [
-    "condordyemod:crimson_terracotta"
+    "condordyemod:crimson_terracotta",
+    "condordyemod:vermilion_terracotta",
+    "condordyemod:amber_terracotta",
+    "condordyemod:chartreuse_terracotta",
+    "condordyemod:light_green_terracotta",
+    "condordyemod:jade_terracotta",
+    "condordyemod:olive_terracotta",
+    "condordyemod:teal_terracotta",
+    "condordyemod:seafoam_terracotta",
+    "condordyemod:azure_terracotta",
+    "condordyemod:indigo_terracotta",
+    "condordyemod:mauve_terracotta",
+    "condordyemod:fuchsia_terracotta",
+    "condordyemod:maroon_terracotta",
+    "condordyemod:coral_terracotta",
+    "condordyemod:light_brown_terracotta"
   ]
 }

@@ -51,6 +51,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CORAL_WOOL);
                         output.accept(ModBlocks.LIGHT_BROWN_WOOL);
                         output.accept(ModBlocks.CRIMSON_TERRACOTTA);
+                        output.accept(ModBlocks.VERMILION_TERRACOTTA);
+                        output.accept(ModBlocks.AMBER_TERRACOTTA);
+                        output.accept(ModBlocks.CHARTREUSE_TERRACOTTA);
+                        output.accept(ModBlocks.OLIVE_TERRACOTTA);
+                        output.accept(ModBlocks.JADE_TERRACOTTA);
+                        output.accept(ModBlocks.LIGHT_GREEN_TERRACOTTA);
+                        output.accept(ModBlocks.SEAFOAM_TERRACOTTA);
+                        output.accept(ModBlocks.TEAL_TERRACOTTA);
+                        output.accept(ModBlocks.AZURE_TERRACOTTA);
+                        output.accept(ModBlocks.INDIGO_TERRACOTTA);
+                        output.accept(ModBlocks.MAUVE_TERRACOTTA);
+                        output.accept(ModBlocks.FUCHSIA_TERRACOTTA);
+                        output.accept(ModBlocks.MAROON_TERRACOTTA);
+                        output.accept(ModBlocks.CORAL_TERRACOTTA);
+                        output.accept(ModBlocks.LIGHT_BROWN_TERRACOTTA);
                     }).build());
 
     public static void register(IEventBus eventBus) {

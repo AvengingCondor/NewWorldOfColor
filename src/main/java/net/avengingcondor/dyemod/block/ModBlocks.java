@@ -69,6 +69,66 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> VERMILION_TERRACOTTA = registerBlock("vermilion_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> AMBER_TERRACOTTA = registerBlock("amber_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> CHARTREUSE_TERRACOTTA = registerBlock("chartreuse_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> MAROON_TERRACOTTA = registerBlock("maroon_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> CORAL_TERRACOTTA = registerBlock("coral_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> JADE_TERRACOTTA = registerBlock("jade_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> LIGHT_GREEN_TERRACOTTA = registerBlock("light_green_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> OLIVE_TERRACOTTA = registerBlock("olive_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> AZURE_TERRACOTTA = registerBlock("azure_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> TEAL_TERRACOTTA = registerBlock("teal_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> SEAFOAM_TERRACOTTA = registerBlock("seafoam_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> MAUVE_TERRACOTTA = registerBlock("mauve_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> FUCHSIA_TERRACOTTA = registerBlock("fuchsia_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> INDIGO_TERRACOTTA = registerBlock("indigo_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> LIGHT_BROWN_TERRACOTTA = registerBlock("light_brown_terracotta",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
