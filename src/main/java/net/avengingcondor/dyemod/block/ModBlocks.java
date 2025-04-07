@@ -23,7 +23,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> VERMILION_WOOL = registerBlock("vermilion_wool",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-    public static final DeferredBlock<Block> MAROON_WOOL = registerBlock("maroon_wool",
+    public static final DeferredBlock<Block> BURGUNDY_WOOL = registerBlock("burgundy_wool",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> CORAL_WOOL = registerBlock("coral_wool",
@@ -47,7 +47,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> TEAL_WOOL = registerBlock("teal_wool",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
-    public static final DeferredBlock<Block> SEAFOAM_WOOL = registerBlock("seafoam_wool",
+    public static final DeferredBlock<Block> TURQUOISE_WOOL = registerBlock("turquoise_wool",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> AZURE_WOOL = registerBlock("azure_wool",
@@ -81,7 +81,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> MAROON_TERRACOTTA = registerBlock("maroon_terracotta",
+    public static final DeferredBlock<Block> BURGUNDY_TERRACOTTA = registerBlock("burgundy_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
@@ -109,7 +109,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> SEAFOAM_TERRACOTTA = registerBlock("seafoam_terracotta",
+    public static final DeferredBlock<Block> TURQUOISE_TERRACOTTA = registerBlock("turquoise_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));

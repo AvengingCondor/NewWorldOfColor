@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "condordyemod:block/maroon_wool"
+    "all": "condordyemod:block/burgundy_wool"
   }
 }

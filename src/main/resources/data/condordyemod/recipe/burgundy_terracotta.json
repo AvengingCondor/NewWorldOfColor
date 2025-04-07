@@ -7,7 +7,7 @@
       "item": "minecraft:terracotta"
     },
     "X": {
-      "item": "condordyemod:dye_seafoam"
+      "item": "condordyemod:dye_burgundy"
     }
   },
   "pattern": [
@@ -17,6 +17,6 @@
   ],
   "result": {
     "count": 8,
-    "id": "condordyemod:seafoam_terracotta"
+    "id": "condordyemod:burgundy_terracotta"
   }
 }

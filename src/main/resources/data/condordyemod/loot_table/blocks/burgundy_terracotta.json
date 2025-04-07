@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "condordyemod:seafoam_terracotta"
+          "name": "condordyemod:burgundy_terracotta"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "condordyemod:seafoam_terracotta"
+  "random_sequence": "condordyemod:burgundy_terracotta"
 }

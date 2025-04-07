@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "condordyemod:maroon_wool"
+          "name": "condordyemod:turquoise_wool"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "condordyemod:maroon_wool"
+  "random_sequence": "condordyemod:turquoise_wool"
 }

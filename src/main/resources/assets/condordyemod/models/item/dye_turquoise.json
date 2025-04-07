@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "condordyemod:item/seafoam_dye"
+    "layer0": "condordyemod:item/turquoise_dye"
   }
 }
