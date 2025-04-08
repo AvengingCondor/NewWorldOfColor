@@ -2,11 +2,16 @@ package net.avengingcondor.dyemod.block;
 
 import net.avengingcondor.dyemod.DyeMod;
 import net.avengingcondor.dyemod.item.ModItems;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.TransparentBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -129,6 +134,43 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
+    /* Stainedglass has its own block type with special handling for changing beacon beam color, but references Dyecolor. maybe hold off
+    on fully adding the rest until I sort out my plan of action there?
+     */
+    public static final DeferredBlock<Block> CRIMSON_STAINED_GLASS = registerBlock("crimson_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> VERMILION_STAINED_GLASS = registerBlock("vermilion_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> AMBER_STAINED_GLASS = registerBlock("amber_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> CHARTREUSE_STAINED_GLASS = registerBlock("chartreuse_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> JADE_STAINED_GLASS = registerBlock("jade_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> LIGHT_GREEN_STAINED_GLASS = registerBlock("light_green_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> OLIVE_STAINED_GLASS = registerBlock("olive_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> TEAL_STAINED_GLASS = registerBlock("teal_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> TURQUOISE_STAINED_GLASS = registerBlock("turquoise_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> AZURE_STAINED_GLASS = registerBlock("azure_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> INDIGO_STAINED_GLASS = registerBlock("indigo_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> MAUVE_STAINED_GLASS = registerBlock("mauve_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> BURGUNDY_STAINED_GLASS = registerBlock("burgundy_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> FUCHSIA_STAINED_GLASS = registerBlock("fuchsia_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> CORAL_STAINED_GLASS = registerBlock("coral_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+    public static final DeferredBlock<Block> LIGHT_BROWN_STAINED_GLASS = registerBlock("light_brown_stained_glass",
+            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

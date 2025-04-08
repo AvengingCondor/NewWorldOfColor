@@ -49,5 +49,21 @@
   "block.condordyemod.fuchsia_terracotta": "Fuchsia Terracotta",
   "block.condordyemod.burgundy_terracotta": "Burgundy Terracotta",
   "block.condordyemod.coral_terracotta": "Coral Terracotta",
-  "block.condordyemod.light_brown_terracotta": "Light Brown Terracotta"
+  "block.condordyemod.light_brown_terracotta": "Light Brown Terracotta",
+  "block.condordyemod.crimson_stained_glass": "Crimson Stained Glass",
+  "block.condordyemod.vermilion_stained_glass": "Vermilion Stained Glass",
+  "block.condordyemod.amber_stained_glass": "Amber Stained Glass",
+  "block.condordyemod.chartreuse_stained_glass": "Chartreuse Stained Glass",
+  "block.condordyemod.olive_stained_glass": "Olive Stained Glass",
+  "block.condordyemod.light_green_stained_glass": "Light Green Stained Glass",
+  "block.condordyemod.jade_stained_glass": "Jade Stained Glass",
+  "block.condordyemod.teal_stained_glass": "Teal Stained Glass",
+  "block.condordyemod.turquoise_stained_glass": "Turquoise Stained Glass",
+  "block.condordyemod.azure_stained_glass": "Azure Stained Glass",
+  "block.condordyemod.indigo_stained_glass": "Indigo Stained Glass",
+  "block.condordyemod.mauve_stained_glass": "Mauve Stained Glass",
+  "block.condordyemod.fuchsia_stained_glass": "Fuchsia Stained Glass",
+  "block.condordyemod.burgundy_stained_glass": "Burgundy Stained Glass",
+  "block.condordyemod.coral_stained_glass": "Coral Stained Glass",
+  "block.condordyemod.light_brown_stained_glass": "Light Brown Stained Glass"
 }
