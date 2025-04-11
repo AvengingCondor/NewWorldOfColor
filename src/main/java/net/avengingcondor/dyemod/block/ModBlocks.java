@@ -2,6 +2,7 @@ package net.avengingcondor.dyemod.block;
 
 import net.avengingcondor.dyemod.DyeMod;
 import net.avengingcondor.dyemod.item.ModItems;
+import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -24,52 +25,52 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> CRIMSON_WOOL = registerBlock("crimson_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.CRIMSON.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> VERMILION_WOOL = registerBlock("vermilion_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.VERMILION.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> BURGUNDY_WOOL = registerBlock("burgundy_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.BURGUNDY.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> CORAL_WOOL = registerBlock("coral_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.CORAL.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> AMBER_WOOL = registerBlock("amber_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.AMBER.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> CHARTREUSE_WOOL = registerBlock("chartreuse_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.CHARTREUSE.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> OLIVE_WOOL = registerBlock("olive_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.OLIVE.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> JADE_WOOL = registerBlock("jade_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.JADE.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> LIGHT_GREEN_WOOL = registerBlock("light_green_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.LIGHT_GREEN.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> TEAL_WOOL = registerBlock("teal_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.TEAL.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> TURQUOISE_WOOL = registerBlock("turquoise_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.TURQUOISE.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> AZURE_WOOL = registerBlock("azure_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.AZURE.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> INDIGO_WOOL = registerBlock("indigo_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.INDIGO.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> MAUVE_WOOL = registerBlock("mauve_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.MAUVE.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> FUCHSIA_WOOL = registerBlock("fuchsia_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.FUCHSIA.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> LIGHT_BROWN_WOOL = registerBlock("light_brown_wool",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.8f).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
+                    .strength(0.8f).mapColor(ModDyeColor.LIGHT_BROWN.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> CRIMSON_TERRACOTTA = registerBlock("crimson_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
