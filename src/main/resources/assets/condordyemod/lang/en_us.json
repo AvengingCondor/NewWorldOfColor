@@ -66,5 +66,20 @@
   "block.condordyemod.burgundy_stained_glass": "Burgundy Stained Glass",
   "block.condordyemod.coral_stained_glass": "Coral Stained Glass",
   "block.condordyemod.light_brown_stained_glass": "Light Brown Stained Glass",
-  "block.condordyemod.crimson_stained_glass_pane": "Crimson Stained Glass Pane"
+  "block.condordyemod.crimson_stained_glass_pane": "Crimson Stained Glass Pane",
+  "block.condordyemod.vermilion_stained_glass_pane": "Vermilion Stained Glass Pane",
+  "block.condordyemod.amber_stained_glass_pane": "Amber Stained Glass Pane",
+  "block.condordyemod.chartreuse_stained_glass_pane": "Chartreuse Stained Glass Pane",
+  "block.condordyemod.olive_stained_glass_pane": "Olive Stained Glass Pane",
+  "block.condordyemod.jade_stained_glass_pane": "Jade Stained Glass Pane",
+  "block.condordyemod.light_green_stained_glass_pane": "Light Green Stained Glass Pane",
+  "block.condordyemod.turquoise_stained_glass_pane": "Turquoise Stained Glass Pane",
+  "block.condordyemod.teal_stained_glass_pane": "Teal Stained Glass Pane",
+  "block.condordyemod.azure_stained_glass_pane": "Azure Stained Glass Pane",
+  "block.condordyemod.indigo_stained_glass_pane": "Indigo Stained Glass Pane",
+  "block.condordyemod.mauve_stained_glass_pane": "Mauve Stained Glass Pane",
+  "block.condordyemod.fuchsia_stained_glass_pane": "Fuchsia Stained Glass Pane",
+  "block.condordyemod.burgundy_stained_glass_pane": "Burgundy Stained Glass Pane",
+  "block.condordyemod.coral_stained_glass_pane": "Coral Stained Glass Pane",
+  "block.condordyemod.light_brown_stained_glass_pane": "Light Brown Stained Glass Pane"
 }

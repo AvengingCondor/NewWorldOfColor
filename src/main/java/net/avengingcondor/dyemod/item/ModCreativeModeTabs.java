@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
    // private static Set<ItemStack> stainedGlassPanes = convertStainedGlass();
 
     public static final Supplier<CreativeModeTab> DYE_ITEMS_TAB = CREATIVE_MODE_TAB.register("more_dye_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BURGUNDY_WOOL))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.DYED_BLOCKS.get("wool").get("burgundy")/*ModBlocks.BURGUNDY_WOOL*/))
                     .title(Component.translatable("creativetab.condordyemod.dye_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.DYE_CRIMSON);
@@ -35,7 +35,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DYE_BURGUNDY);
                         output.accept(ModItems.DYE_CORAL);
                         output.accept(ModItems.DYE_LIGHT_BROWN);
-                        output.accept(ModBlocks.CRIMSON_WOOL);
+                        /*output.accept(ModBlocks.CRIMSON_WOOL);
                         output.accept(ModBlocks.VERMILION_WOOL);
                         output.accept(ModBlocks.AMBER_WOOL);
                         output.accept(ModBlocks.CHARTREUSE_WOOL);
@@ -66,70 +66,76 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FUCHSIA_TERRACOTTA);
                         output.accept(ModBlocks.BURGUNDY_TERRACOTTA);
                         output.accept(ModBlocks.CORAL_TERRACOTTA);
-                        output.accept(ModBlocks.LIGHT_BROWN_TERRACOTTA);
-                        /*output.accept(ModBlocks.CRIMSON_STAINED_GLASS);
-                        output.accept(ModBlocks.VERMILION_STAINED_GLASS);
-                        output.accept(ModBlocks.AMBER_STAINED_GLASS);
-                        output.accept(ModBlocks.CHARTREUSE_STAINED_GLASS);
-                        output.accept(ModBlocks.OLIVE_STAINED_GLASS);
-                        output.accept(ModBlocks.JADE_STAINED_GLASS);
-                        output.accept(ModBlocks.LIGHT_GREEN_STAINED_GLASS);
-                        output.accept(ModBlocks.TURQUOISE_STAINED_GLASS);
-                        output.accept(ModBlocks.TEAL_STAINED_GLASS);
-                        output.accept(ModBlocks.AZURE_STAINED_GLASS);
-                        output.accept(ModBlocks.INDIGO_STAINED_GLASS);
-                        output.accept(ModBlocks.MAUVE_STAINED_GLASS);
-                        output.accept(ModBlocks.FUCHSIA_STAINED_GLASS);
-                        output.accept(ModBlocks.BURGUNDY_STAINED_GLASS);
-                        output.accept(ModBlocks.CORAL_STAINED_GLASS);
-                        output.accept(ModBlocks.LIGHT_BROWN_STAINED_GLASS);*/
-                        output.accept(ModBlocks.STAINED_GLASS.get("crimson"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("vermilion"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("amber"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("chartreuse"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("olive"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("jade"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("light_green"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("turquoise"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("teal"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("azure"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("indigo"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("mauve"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("fuchsia"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("burgundy"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("coral"));
-                        output.accept(ModBlocks.STAINED_GLASS.get("light_brown"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("crimson"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("vermilion"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("amber"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("chartreuse"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("olive"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("jade"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("light_green"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("turquoise"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("teal"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("azure"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("indigo"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("mauve"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("fuchsia"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("burgundy"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("coral"));
-                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("light_brown"));
-                        //output.accept(ModBlocks.CRIMSON_STAINED_GLASS_PANE);
+                        output.accept(ModBlocks.LIGHT_BROWN_TERRACOTTA);*/
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("crimson"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("vermilion"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("amber"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("chartreuse"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("olive"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("jade"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("light_green"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("turquoise"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("teal"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("azure"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("indigo"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("mauve"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("fuchsia"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("burgundy"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("coral"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("wool").get("light_brown"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("crimson"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("vermilion"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("amber"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("chartreuse"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("olive"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("jade"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("light_green"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("turquoise"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("teal"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("azure"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("indigo"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("mauve"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("fuchsia"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("burgundy"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("coral"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("terracotta").get("light_brown"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("crimson"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("vermilion"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("amber"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("chartreuse"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("olive"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("jade"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("light_green"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("turquoise"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("teal"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("azure"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("indigo"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("mauve"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("fuchsia"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("burgundy"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("coral"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass").get("light_brown"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("crimson"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("vermilion"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("amber"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("chartreuse"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("olive"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("jade"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("light_green"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("turquoise"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("teal"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("azure"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("indigo"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("mauve"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("fuchsia"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("burgundy"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("coral"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("light_brown"));
                     }).build());
 
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }
-
-    /*private static Set<ItemStack> convertStainedGlass() {
-        Set<ItemStack> paneItems = new HashSet<>();
-        for(Map.Entry<String, DeferredBlock<Block>> entry : ModBlocks.STAINED_GLASS_PANES.entrySet()) {
-            paneItems.add(new ItemStack(entry.getValue()));
-        }
-
-        return paneItems;
-    }*/
 
 }
