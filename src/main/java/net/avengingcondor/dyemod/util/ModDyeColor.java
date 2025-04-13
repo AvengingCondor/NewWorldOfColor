@@ -11,7 +11,6 @@ import net.minecraft.util.ByIdMap;
 import net.minecraft.util.FastColor;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.material.MapColor;
 
 import javax.annotation.Nullable;
