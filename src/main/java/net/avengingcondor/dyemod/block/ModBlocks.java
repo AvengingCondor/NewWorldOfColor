@@ -2,6 +2,7 @@ package net.avengingcondor.dyemod.block;
 
 import net.avengingcondor.dyemod.DyeMod;
 import net.avengingcondor.dyemod.block.custom.ModStainedGlassBlock;
+import net.avengingcondor.dyemod.block.custom.ModStainedGlassPaneBlock;
 import net.avengingcondor.dyemod.item.ModItems;
 import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.core.BlockPos;
@@ -169,15 +170,17 @@ public class ModBlocks {
             () -> new ModStainedGlassBlock(ModDyeColor.CORAL, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.CORAL.getMapColor())));
     public static final DeferredBlock<Block> LIGHT_BROWN_STAINED_GLASS = registerBlock("light_brown_stained_glass",
             () -> new ModStainedGlassBlock(ModDyeColor.LIGHT_BROWN, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.LIGHT_BROWN.getMapColor())));
+    public static final DeferredBlock<Block> CRIMSON_STAINED_GLASS_PANE = registerBlock("crimson_stained_glass_pane",
+            () -> new ModStainedGlassPaneBlock(ModDyeColor.CRIMSON, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS_PANE).mapColor(ModDyeColor.CRIMSON.getMapColor())));
 
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
-        registerBlocKItem(name, toReturn);
+        registerBlockItem(name, toReturn);
         return toReturn;
     }
-    private static <T extends Block> void registerBlocKItem(String name, DeferredBlock<T> block) {
+    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 

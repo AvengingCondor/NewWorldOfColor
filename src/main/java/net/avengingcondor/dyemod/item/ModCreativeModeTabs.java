@@ -82,6 +82,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BURGUNDY_STAINED_GLASS);
                         output.accept(ModBlocks.CORAL_STAINED_GLASS);
                         output.accept(ModBlocks.LIGHT_BROWN_STAINED_GLASS);
+                        output.accept(ModBlocks.CRIMSON_STAINED_GLASS_PANE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

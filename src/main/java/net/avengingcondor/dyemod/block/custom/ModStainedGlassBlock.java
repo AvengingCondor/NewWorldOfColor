@@ -22,9 +22,11 @@ public class ModStainedGlassBlock extends TransparentBlock implements BeaconBeam
         However, the override for beacon color below seems to work on its own and this necessary "getColor" method that
         serves as the only thing the BeaconBeamBlock interface includes doesn't seem to actually do anything here, hence the placeholder return value
      */
+    @Override
     public DyeColor getColor() {
         return DyeColor.WHITE;
     }
+    public ModDyeColor getTrueColor() { return this.color; }
 
     @Override
     public @Nullable Integer getBeaconColorMultiplier(BlockState state, LevelReader level, BlockPos pos, BlockPos beaconPos) {
