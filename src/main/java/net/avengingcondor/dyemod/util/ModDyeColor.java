@@ -100,6 +100,10 @@ public enum ModDyeColor implements StringRepresentable {
     public int getFireworkColor() {return fireworkColor;}
 
     public int getTextColor() {return textColor;}
+    public static ModDyeColor[] newDyeValues() {
+        ModDyeColor[] colors = ModDyeColor.values();
+        return Arrays.copyOfRange(colors, 16, colors.length);
+    }
     public static ModDyeColor byID(int colorID) {return BY_ID.apply(colorID);}
     @Nullable
     public static ModDyeColor byFireworkColor(int fireworkColor) {

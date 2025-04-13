@@ -6,13 +6,21 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, DyeMod.MOD_ID);
+   // private static Set<ItemStack> stainedGlassPanes = convertStainedGlass();
 
     public static final Supplier<CreativeModeTab> DYE_ITEMS_TAB = CREATIVE_MODE_TAB.register("more_dye_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BURGUNDY_WOOL))
@@ -66,7 +74,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BURGUNDY_TERRACOTTA);
                         output.accept(ModBlocks.CORAL_TERRACOTTA);
                         output.accept(ModBlocks.LIGHT_BROWN_TERRACOTTA);
-                        output.accept(ModBlocks.CRIMSON_STAINED_GLASS);
+                        /*output.accept(ModBlocks.CRIMSON_STAINED_GLASS);
                         output.accept(ModBlocks.VERMILION_STAINED_GLASS);
                         output.accept(ModBlocks.AMBER_STAINED_GLASS);
                         output.accept(ModBlocks.CHARTREUSE_STAINED_GLASS);
@@ -81,12 +89,54 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FUCHSIA_STAINED_GLASS);
                         output.accept(ModBlocks.BURGUNDY_STAINED_GLASS);
                         output.accept(ModBlocks.CORAL_STAINED_GLASS);
-                        output.accept(ModBlocks.LIGHT_BROWN_STAINED_GLASS);
-                        output.accept(ModBlocks.CRIMSON_STAINED_GLASS_PANE);
+                        output.accept(ModBlocks.LIGHT_BROWN_STAINED_GLASS);*/
+                        output.accept(ModBlocks.STAINED_GLASS.get("crimson"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("vermilion"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("amber"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("chartreuse"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("olive"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("jade"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("light_green"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("turquoise"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("teal"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("azure"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("indigo"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("mauve"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("fuchsia"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("burgundy"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("coral"));
+                        output.accept(ModBlocks.STAINED_GLASS.get("light_brown"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("crimson"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("vermilion"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("amber"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("chartreuse"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("olive"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("jade"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("light_green"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("turquoise"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("teal"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("azure"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("indigo"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("mauve"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("fuchsia"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("burgundy"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("coral"));
+                        output.accept(ModBlocks.STAINED_GLASS_PANES.get("light_brown"));
+                        //output.accept(ModBlocks.CRIMSON_STAINED_GLASS_PANE);
                     }).build());
+
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }
+
+    /*private static Set<ItemStack> convertStainedGlass() {
+        Set<ItemStack> paneItems = new HashSet<>();
+        for(Map.Entry<String, DeferredBlock<Block>> entry : ModBlocks.STAINED_GLASS_PANES.entrySet()) {
+            paneItems.add(new ItemStack(entry.getValue()));
+        }
+
+        return paneItems;
+    }*/
 
 }
