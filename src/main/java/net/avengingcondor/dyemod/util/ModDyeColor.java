@@ -42,11 +42,11 @@ public enum ModDyeColor implements StringRepresentable {
     BLACK(15, "black", 1908001, MapColor.COLOR_BLACK, 1973019, 0),
 
     //New Colors(FireworkColor is placeholder for all, it's just white)
-    CRIMSON(16, "crimson", 9448235, MapColor.CRIMSON_STEM, 15790321, 8388608),
+    CRIMSON(16, "crimson", 9448235, MapColor.NETHER, 15790321, 8388608),
     VERMILION(17, "vermilion", 13326908, MapColor.TERRACOTTA_ORANGE, 15790322, 14889475),
     AMBER(18, "amber", 16762688, MapColor.TERRACOTTA_YELLOW, 15790323, 16766720),
     CHARTREUSE(19, "chartreuse", 13953641, MapColor.COLOR_YELLOW, 15790324, 14483247),
-    OLIVE(20, "olive", 9811032, MapColor.TERRACOTTA_LIGHT_GREEN, 15790325, 8300077),
+    OLIVE(20, "olive", 9811032, MapColor.GRASS, 15790325, 8300077),
     LIGHT_GREEN(21, "light_green", 7325039, MapColor.EMERALD, 15790326, 3329330),
     JADE(22, "jade", 4230720, MapColor.PLANT, 15790327, 25600),
     TEAL(23, "teal", 5359278, MapColor.WARPED_STEM, 15790328, 2285752),

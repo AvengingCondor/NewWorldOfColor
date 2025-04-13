@@ -1,6 +1,7 @@
 package net.avengingcondor.dyemod.block;
 
 import net.avengingcondor.dyemod.DyeMod;
+import net.avengingcondor.dyemod.block.custom.ModStainedGlassBlock;
 import net.avengingcondor.dyemod.item.ModItems;
 import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.core.BlockPos;
@@ -14,6 +15,7 @@ import net.minecraft.world.level.block.TransparentBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -73,103 +75,100 @@ public class ModBlocks {
                     .strength(0.8f).mapColor(ModDyeColor.LIGHT_BROWN.getMapColor()).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().sound(SoundType.WOOL)));
     public static final DeferredBlock<Block> CRIMSON_TERRACOTTA = registerBlock("crimson_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.CRIMSON_HYPHAE)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> VERMILION_TERRACOTTA = registerBlock("vermilion_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(ModDyeColor.VERMILION.getMapColor())
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> AMBER_TERRACOTTA = registerBlock("amber_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_ORANGE)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> CHARTREUSE_TERRACOTTA = registerBlock("chartreuse_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(ModDyeColor.CHARTREUSE.getMapColor())
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> BURGUNDY_TERRACOTTA = registerBlock("burgundy_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_PURPLE)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> CORAL_TERRACOTTA = registerBlock("coral_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_MAGENTA)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> JADE_TERRACOTTA = registerBlock("jade_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_GREEN)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> LIGHT_GREEN_TERRACOTTA = registerBlock("light_green_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_GREEN)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> OLIVE_TERRACOTTA = registerBlock("olive_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_LIGHT_GREEN)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> AZURE_TERRACOTTA = registerBlock("azure_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_CYAN)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> TEAL_TERRACOTTA = registerBlock("teal_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.GLOW_LICHEN)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> TURQUOISE_TERRACOTTA = registerBlock("turquoise_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_LIGHT_BLUE)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> MAUVE_TERRACOTTA = registerBlock("mauve_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.CLAY)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> FUCHSIA_TERRACOTTA = registerBlock("fuchsia_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.CRIMSON_STEM)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> INDIGO_TERRACOTTA = registerBlock("indigo_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.TERRACOTTA_BLUE)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
     public static final DeferredBlock<Block> LIGHT_BROWN_TERRACOTTA = registerBlock("light_brown_terracotta",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops()
+                    .strength(1.25f, 4.2f).requiresCorrectToolForDrops().mapColor(MapColor.COLOR_BROWN)
                     .instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
-    /* Stainedglass has its own block type with special handling for changing beacon beam color, but references Dyecolor. maybe hold off
-    on fully adding the rest until I sort out my plan of action there?
-     */
     public static final DeferredBlock<Block> CRIMSON_STAINED_GLASS = registerBlock("crimson_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.CRIMSON, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.CRIMSON.getMapColor())));
     public static final DeferredBlock<Block> VERMILION_STAINED_GLASS = registerBlock("vermilion_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.VERMILION, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.VERMILION.getMapColor())));
     public static final DeferredBlock<Block> AMBER_STAINED_GLASS = registerBlock("amber_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.AMBER, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.AMBER.getMapColor())));
     public static final DeferredBlock<Block> CHARTREUSE_STAINED_GLASS = registerBlock("chartreuse_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.CHARTREUSE, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.CHARTREUSE.getMapColor())));
     public static final DeferredBlock<Block> JADE_STAINED_GLASS = registerBlock("jade_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.JADE, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.JADE.getMapColor())));
     public static final DeferredBlock<Block> LIGHT_GREEN_STAINED_GLASS = registerBlock("light_green_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.LIGHT_GREEN, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.LIGHT_GREEN.getMapColor())));
     public static final DeferredBlock<Block> OLIVE_STAINED_GLASS = registerBlock("olive_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.OLIVE, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.OLIVE.getMapColor())));
     public static final DeferredBlock<Block> TEAL_STAINED_GLASS = registerBlock("teal_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.TEAL, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.TEAL.getMapColor())));
     public static final DeferredBlock<Block> TURQUOISE_STAINED_GLASS = registerBlock("turquoise_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.TURQUOISE, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.TURQUOISE.getMapColor())));
     public static final DeferredBlock<Block> AZURE_STAINED_GLASS = registerBlock("azure_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.AZURE, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.AZURE.getMapColor())));
     public static final DeferredBlock<Block> INDIGO_STAINED_GLASS = registerBlock("indigo_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.INDIGO, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.INDIGO.getMapColor())));
     public static final DeferredBlock<Block> MAUVE_STAINED_GLASS = registerBlock("mauve_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.MAUVE, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.MAUVE.getMapColor())));
     public static final DeferredBlock<Block> BURGUNDY_STAINED_GLASS = registerBlock("burgundy_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.BURGUNDY, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.BURGUNDY.getMapColor())));
     public static final DeferredBlock<Block> FUCHSIA_STAINED_GLASS = registerBlock("fuchsia_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.FUCHSIA, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.FUCHSIA.getMapColor())));
     public static final DeferredBlock<Block> CORAL_STAINED_GLASS = registerBlock("coral_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.CORAL, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.CORAL.getMapColor())));
     public static final DeferredBlock<Block> LIGHT_BROWN_STAINED_GLASS = registerBlock("light_brown_stained_glass",
-            () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)));
+            () -> new ModStainedGlassBlock(ModDyeColor.LIGHT_BROWN, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(ModDyeColor.LIGHT_BROWN.getMapColor())));
 
 
 
