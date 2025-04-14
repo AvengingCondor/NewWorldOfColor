@@ -1,6 +1,7 @@
 package net.avengingcondor.dyemod.block;
 
 import net.avengingcondor.dyemod.DyeMod;
+import net.avengingcondor.dyemod.block.custom.ModCarpetBlock;
 import net.avengingcondor.dyemod.block.custom.ModFlammableBlock;
 import net.avengingcondor.dyemod.block.custom.ModStainedGlassBlock;
 import net.avengingcondor.dyemod.block.custom.ModStainedGlassPaneBlock;
@@ -10,6 +11,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.GlazedTerracottaBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -35,12 +37,17 @@ public class ModBlocks {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-    //ideally need to turn this into something more broadly usable when I'm less tired
+
     private static void registerDyedBlocks(String colorName, ModDyeColor color) {
         String name = colorName + "_wool";
         DeferredBlock<Block> block = registerBlock(name,
                 () -> new ModFlammableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).mapColor(color.getMapColor())));
         DYED_BLOCKS.get("wool").put(colorName, block);
+
+        name = colorName + "_carpet";
+        block = registerBlock(name,
+                () -> new ModCarpetBlock(color, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CARPET).mapColor(color.getMapColor())));
+        DYED_BLOCKS.get("carpet").put(colorName, block);
 
         name = colorName + "_terracotta";
         MapColor terracottaColor = switch (color) {
@@ -64,6 +71,11 @@ public class ModBlocks {
                 () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_TERRACOTTA).mapColor(terracottaColor)));
         DYED_BLOCKS.get("terracotta").put(colorName, block);
 
+        name = colorName + "_glazed_terracotta";
+        block = registerBlock(name,
+                () -> new GlazedTerracottaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_GLAZED_TERRACOTTA).mapColor(color.getMapColor())));
+        DYED_BLOCKS.get("glazed_terracotta").put(colorName, block);
+
         name = colorName + "_stained_glass";
         block = registerBlock(name,
                 ()-> new ModStainedGlassBlock(color, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS).mapColor(color.getMapColor())));
@@ -77,7 +89,9 @@ public class ModBlocks {
 
     public static void register(IEventBus eventBus) {
         DYED_BLOCKS.put("wool", new HashMap<>());
+        DYED_BLOCKS.put("carpet", new HashMap<>());
         DYED_BLOCKS.put("terracotta", new HashMap<>());
+        DYED_BLOCKS.put("glazed_terracotta", new HashMap<>());
         DYED_BLOCKS.put("stained_glass", new HashMap<>());
         DYED_BLOCKS.put("stained_glass_panes", new HashMap<>());
 

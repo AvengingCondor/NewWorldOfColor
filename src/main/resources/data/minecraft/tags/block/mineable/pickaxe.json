@@ -16,6 +16,22 @@
     "condordyemod:fuchsia_terracotta",
     "condordyemod:burgundy_terracotta",
     "condordyemod:coral_terracotta",
-    "condordyemod:light_brown_terracotta"
+    "condordyemod:light_brown_terracotta",
+    "condordyemod:crimson_glazed_terracotta",
+    "condordyemod:vermilion_glazed_terracotta",
+    "condordyemod:amber_glazed_terracotta",
+    "condordyemod:chartreuse_glazed_terracotta",
+    "condordyemod:light_green_glazed_terracotta",
+    "condordyemod:jade_glazed_terracotta",
+    "condordyemod:olive_glazed_terracotta",
+    "condordyemod:teal_glazed_terracotta",
+    "condordyemod:turquoise_glazed_terracotta",
+    "condordyemod:azure_glazed_terracotta",
+    "condordyemod:indigo_glazed_terracotta",
+    "condordyemod:mauve_glazed_terracotta",
+    "condordyemod:fuchsia_glazed_terracotta",
+    "condordyemod:burgundy_glazed_terracotta",
+    "condordyemod:coral_glazed_terracotta",
+    "condordyemod:light_brown_glazed_terracotta"
   ]
 }
