@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_glazed_terracotta",
+  "textures": {
+    "pattern": "condordyemod:block/vermilion_glazed_terracotta"
+  }
+}
