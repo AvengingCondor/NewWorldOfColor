@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "condordyemod:block/olive_glazed_terracotta",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "condordyemod:block/olive_glazed_terracotta",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "condordyemod:block/olive_glazed_terracotta"
+    },
+    "facing=west": {
+      "model": "condordyemod:block/olive_glazed_terracotta",
+      "y": 90
+    }
+  }
+}
