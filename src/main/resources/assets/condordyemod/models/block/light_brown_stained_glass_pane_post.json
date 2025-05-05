@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "render_type": "translucent",
+  "textures": {
+    "edge": "condordyemod:block/light_brown_stained_glass_pane_top",
+    "pane": "condordyemod:block/light_brown_stained_glass"
+  }
+}
