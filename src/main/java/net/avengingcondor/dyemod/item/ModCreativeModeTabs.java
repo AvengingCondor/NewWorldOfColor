@@ -163,6 +163,38 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("burgundy"));
                         output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("coral"));
                         output.accept(ModBlocks.DYED_BLOCKS.get("stained_glass_panes").get("light_brown"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("crimson"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("vermilion"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("amber"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("chartreuse"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("olive"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("jade"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("light_green"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("turquoise"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("teal"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("azure"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("indigo"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("mauve"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("fuchsia"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("burgundy"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("coral"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete_powder").get("light_brown"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("crimson"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("vermilion"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("amber"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("chartreuse"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("olive"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("jade"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("light_green"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("turquoise"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("teal"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("azure"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("indigo"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("mauve"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("fuchsia"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("burgundy"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("coral"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("concrete").get("light_brown"));
                     }).build());
 
 

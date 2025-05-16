@@ -9,10 +9,7 @@ import net.avengingcondor.dyemod.item.ModItems;
 import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.GlazedTerracottaBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -85,6 +82,17 @@ public class ModBlocks {
         block = registerBlock(name,
                 ()-> new ModStainedGlassPaneBlock(color, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS_PANE).mapColor(color.getMapColor())));
         DYED_BLOCKS.get("stained_glass_panes").put(colorName, block);
+
+        name = colorName + "_concrete";
+        block = registerBlock(name,
+                ()-> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE).mapColor(color.getMapColor())));
+        DYED_BLOCKS.get("concrete").put(colorName, block);
+
+        DeferredBlock<Block> matchingConcrete = block;
+        name += "_powder";
+        block = registerBlock(name,
+                ()-> new ConcretePowderBlock(matchingConcrete.value(), BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE_POWDER).mapColor(color.getMapColor())));
+        DYED_BLOCKS.get("concrete_powder").put(colorName, block);
     }
 
     public static void register(IEventBus eventBus) {
@@ -94,6 +102,8 @@ public class ModBlocks {
         DYED_BLOCKS.put("glazed_terracotta", new HashMap<>());
         DYED_BLOCKS.put("stained_glass", new HashMap<>());
         DYED_BLOCKS.put("stained_glass_panes", new HashMap<>());
+        DYED_BLOCKS.put("concrete", new HashMap<>());
+        DYED_BLOCKS.put("concrete_powder", new HashMap<>());
 
         for (ModDyeColor color : ModDyeColor.newDyeValues()) {
             registerDyedBlocks(color.getName(), color);
