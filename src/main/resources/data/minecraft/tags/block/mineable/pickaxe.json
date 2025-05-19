@@ -32,6 +32,22 @@
     "condordyemod:fuchsia_glazed_terracotta",
     "condordyemod:burgundy_glazed_terracotta",
     "condordyemod:coral_glazed_terracotta",
-    "condordyemod:light_brown_glazed_terracotta"
+    "condordyemod:light_brown_glazed_terracotta",
+    "condordyemod:crimson_concrete",
+    "condordyemod:vermilion_concrete",
+    "condordyemod:amber_concrete",
+    "condordyemod:chartreuse_concrete",
+    "condordyemod:light_green_concrete",
+    "condordyemod:jade_concrete",
+    "condordyemod:olive_concrete",
+    "condordyemod:teal_concrete",
+    "condordyemod:turquoise_concrete",
+    "condordyemod:azure_concrete",
+    "condordyemod:indigo_concrete",
+    "condordyemod:mauve_concrete",
+    "condordyemod:fuchsia_concrete",
+    "condordyemod:burgundy_concrete",
+    "condordyemod:coral_concrete",
+    "condordyemod:light_brown_concrete"
   ]
 }

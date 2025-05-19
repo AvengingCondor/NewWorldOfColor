@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "condordyemod:block/light_brown_concrete_powder"
+      },
+      {
+        "model": "condordyemod:block/light_brown_concrete_powder",
+        "y": 90
+      },
+      {
+        "model": "condordyemod:block/light_brown_concrete_powder",
+        "y": 180
+      },
+      {
+        "model": "condordyemod:block/light_brown_concrete_powder",
+        "y": 270
+      }
+    ]
+  }
+}
