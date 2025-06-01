@@ -93,6 +93,17 @@ public class ModBlocks {
         block = registerBlock(name,
                 ()-> new ConcretePowderBlock(matchingConcrete.value(), BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE_POWDER).mapColor(color.getMapColor())));
         DYED_BLOCKS.get("concrete_powder").put(colorName, block);
+
+        name = colorName + "_candle";
+        block = registerBlock(name,
+                ()-> new CandleBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CANDLE).mapColor(color.getMapColor())));
+        DYED_BLOCKS.get("candle").put(colorName, block);
+
+        DeferredBlock<Block> matchingCandle = block;
+        name += "_cake";
+        block = registerBlock(name,
+                ()-> new CandleCakeBlock(matchingCandle.value(), BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CANDLE_CAKE)));
+        DYED_BLOCKS.get("candle_cake").put(colorName, block);
     }
 
     public static void register(IEventBus eventBus) {
@@ -104,6 +115,8 @@ public class ModBlocks {
         DYED_BLOCKS.put("stained_glass_panes", new HashMap<>());
         DYED_BLOCKS.put("concrete", new HashMap<>());
         DYED_BLOCKS.put("concrete_powder", new HashMap<>());
+        DYED_BLOCKS.put("candle", new HashMap<>());
+        DYED_BLOCKS.put("candle_cake", new HashMap<>());
 
         for (ModDyeColor color : ModDyeColor.newDyeValues()) {
             registerDyedBlocks(color.getName(), color);
