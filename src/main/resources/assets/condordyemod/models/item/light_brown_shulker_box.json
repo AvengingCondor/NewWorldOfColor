@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/template_shulker_box",
+  "textures": {
+    "particle": "condordyemod:block/light_brown_shulker_box"
+  }
+}

@@ -177,5 +177,21 @@
   "block.condordyemod.fuchsia_candle_cake": "Cake with Fuchsia Candle",
   "block.condordyemod.burgundy_candle_cake": "Cake with Burgundy Candle",
   "block.condordyemod.coral_candle_cake": "Cake with Coral Candle",
-  "block.condordyemod.light_brown_candle_cake": "Cake with Light Brown Candle"
+  "block.condordyemod.light_brown_candle_cake": "Cake with Light Brown Candle",
+  "block.condordyemod.crimson_shulker_box": "Crimson Shulker Box",
+  "block.condordyemod.vermilion_shulker_box": "Vermilion Shulker Box",
+  "block.condordyemod.amber_shulker_box": "Amber Shulker Box",
+  "block.condordyemod.chartreuse_shulker_box": "Chartreuse Shulker Box",
+  "block.condordyemod.light_green_shulker_box": "Light Green Shulker Box",
+  "block.condordyemod.jade_shulker_box": "Jade Shulker Box",
+  "block.condordyemod.olive_shulker_box": "Olive Shulker Box",
+  "block.condordyemod.teal_shulker_box": "Teal Shulker Box",
+  "block.condordyemod.turquoise_shulker_box": "Turquoise Shulker Box",
+  "block.condordyemod.azure_shulker_box": "Azure Shulker Box",
+  "block.condordyemod.indigo_shulker_box": "Indigo Shulker Box",
+  "block.condordyemod.mauve_shulker_box": "Mauve Shulker Box",
+  "block.condordyemod.fuchsia_shulker_box": "Fuchsia Shulker Box",
+  "block.condordyemod.burgundy_shulker_box": "Burgundy Shulker Box",
+  "block.condordyemod.coral_shulker_box": "Coral Shulker Box",
+  "block.condordyemod.light_brown_shulker_box": "Light Brown Shulker Box"
 }

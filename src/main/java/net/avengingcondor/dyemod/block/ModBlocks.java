@@ -1,17 +1,13 @@
 package net.avengingcondor.dyemod.block;
 
 import net.avengingcondor.dyemod.DyeMod;
-import net.avengingcondor.dyemod.block.custom.ModCarpetBlock;
-import net.avengingcondor.dyemod.block.custom.ModFlammableBlock;
-import net.avengingcondor.dyemod.block.custom.ModStainedGlassBlock;
-import net.avengingcondor.dyemod.block.custom.ModStainedGlassPaneBlock;
+import net.avengingcondor.dyemod.block.custom.*;
 import net.avengingcondor.dyemod.item.ModItems;
 import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -32,6 +28,12 @@ public class ModBlocks {
     }
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static <T extends Block> DeferredBlock<T> registerUnstackableBlock(String name, Supplier<T> block) {
+        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
+        ModItems.ITEMS.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties().stacksTo(1)));
+        return toReturn;
     }
 
 
@@ -104,6 +106,11 @@ public class ModBlocks {
         block = registerBlock(name,
                 ()-> new CandleCakeBlock(matchingCandle.value(), BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CANDLE_CAKE)));
         DYED_BLOCKS.get("candle_cake").put(colorName, block);
+
+        name = colorName + "_shulker_box";
+        block = registerUnstackableBlock(name,
+                ()-> new ModShulkerBoxBlock(color, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_SHULKER_BOX).mapColor(color.getMapColor())));
+        DYED_BLOCKS.get("shulker_box").put(colorName, block);
     }
 
     public static void register(IEventBus eventBus) {
@@ -117,6 +124,7 @@ public class ModBlocks {
         DYED_BLOCKS.put("concrete_powder", new HashMap<>());
         DYED_BLOCKS.put("candle", new HashMap<>());
         DYED_BLOCKS.put("candle_cake", new HashMap<>());
+        DYED_BLOCKS.put("shulker_box", new HashMap<>());
 
         for (ModDyeColor color : ModDyeColor.newDyeValues()) {
             registerDyedBlocks(color.getName(), color);
