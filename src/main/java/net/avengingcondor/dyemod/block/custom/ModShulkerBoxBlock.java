@@ -5,7 +5,6 @@ import net.avengingcondor.dyemod.entity.ModBlockEntities;
 import net.avengingcondor.dyemod.entity.ModShulkerBoxBlockEntity;
 import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.piglin.PiglinAi;

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_three_candles",
+  "textures": {
+    "all": "condordyemod:block/amber_candle",
+    "particle": "condordyemod:block/amber_candle"
+  }
+}

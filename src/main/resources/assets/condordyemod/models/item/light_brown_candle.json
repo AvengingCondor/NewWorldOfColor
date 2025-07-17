@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "condordyemod:item/light_brown_candle"
+  }
+}

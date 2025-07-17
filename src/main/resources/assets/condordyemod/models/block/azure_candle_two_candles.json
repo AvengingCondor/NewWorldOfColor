@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_two_candles",
+  "textures": {
+    "all": "condordyemod:block/azure_candle",
+    "particle": "condordyemod:block/azure_candle"
+  }
+}

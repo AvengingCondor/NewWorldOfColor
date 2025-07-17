@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "condordyemod:block/turquoise_candle_cake"
+    },
+    "lit=true": {
+      "model": "condordyemod:block/turquoise_candle_cake_lit"
+    }
+  }
+}

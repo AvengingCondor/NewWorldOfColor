@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_candle",
+  "textures": {
+    "all": "condordyemod:block/fuchsia_candle",
+    "particle": "condordyemod:block/fuchsia_candle"
+  }
+}

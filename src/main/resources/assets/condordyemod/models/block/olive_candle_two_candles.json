@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_two_candles",
+  "textures": {
+    "all": "condordyemod:block/olive_candle",
+    "particle": "condordyemod:block/olive_candle"
+  }
+}
