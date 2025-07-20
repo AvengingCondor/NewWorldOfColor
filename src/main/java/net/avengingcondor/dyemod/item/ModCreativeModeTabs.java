@@ -195,6 +195,22 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DYED_BLOCKS.get("shulker_box").get("burgundy"));
                         output.accept(ModBlocks.DYED_BLOCKS.get("shulker_box").get("coral"));
                         output.accept(ModBlocks.DYED_BLOCKS.get("shulker_box").get("light_brown"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("crimson"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("vermilion"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("amber"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("chartreuse"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("olive"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("jade"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("light_green"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("turquoise"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("teal"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("azure"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("indigo"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("mauve"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("fuchsia"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("burgundy"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("coral"));
+                        output.accept(ModBlocks.DYED_BLOCKS.get("bed").get("light_brown"));
                     }).build());
 
 

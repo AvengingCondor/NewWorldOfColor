@@ -4,13 +4,14 @@ import net.avengingcondor.dyemod.block.ModBlocks;
 import net.avengingcondor.dyemod.entity.ModBlockEntities;
 import net.avengingcondor.dyemod.item.ModCreativeModeTabs;
 import net.avengingcondor.dyemod.item.ModItems;
+import net.avengingcondor.dyemod.render.ModBedBlockEntityRenderer;
 import net.avengingcondor.dyemod.render.ModShulkerBoxBlockEntityRenderer;
-import net.avengingcondor.dyemod.util.ClientItemExtensions;
+import net.avengingcondor.dyemod.util.BedItemApplyRenderer;
+import net.avengingcondor.dyemod.util.ShulkerBoxItemApplyRenderer;
 import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import org.slf4j.Logger;
@@ -40,6 +41,7 @@ public class DyeMod
     public static final String MOD_ID = "condordyemod";
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final Map<Integer, Material> SHULKER_MATERIAL_MAP = new HashMap<>();
+    public static final Map<Integer, Material> BED_MATERIAL_MAP = new HashMap<>();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -95,12 +97,16 @@ public class DyeMod
                     ModBlockEntities.SHULKER_BOX.get(),
                     ModShulkerBoxBlockEntityRenderer::new
             );
+            event.registerBlockEntityRenderer(
+                    ModBlockEntities.BED.get(),
+                    ModBedBlockEntityRenderer::new
+            );
         }
 
         @SubscribeEvent
         public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
             event.registerItem(
-                    new ClientItemExtensions(),
+                    new ShulkerBoxItemApplyRenderer(),
                     ModBlocks.DYED_BLOCKS.get("shulker_box").get("crimson").asItem(),
                     ModBlocks.DYED_BLOCKS.get("shulker_box").get("amber").asItem(),
                     ModBlocks.DYED_BLOCKS.get("shulker_box").get("vermilion").asItem(),
@@ -118,12 +124,34 @@ public class DyeMod
                     ModBlocks.DYED_BLOCKS.get("shulker_box").get("burgundy").asItem(),
                     ModBlocks.DYED_BLOCKS.get("shulker_box").get("coral").asItem()
             );
+            event.registerItem(
+                    new BedItemApplyRenderer(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("crimson").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("amber").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("vermilion").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("chartreuse").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("jade").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("olive").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("light_green").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("light_brown").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("teal").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("turquoise").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("azure").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("indigo").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("mauve").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("fuchsia").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("burgundy").asItem(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("coral").asItem()
+            );
         }
 
         @SubscribeEvent
         public static void clientSetup(final FMLClientSetupEvent event) {
             for (ModDyeColor color : ModDyeColor.newDyeValues()) {
                 SHULKER_MATERIAL_MAP.put(color.getId(), new Material(Sheets.SHULKER_SHEET, ResourceLocation.fromNamespaceAndPath(MOD_ID, "entity/shulker/shulker_" + color.getSerializedName())));
+            }
+            for (ModDyeColor color : ModDyeColor.newDyeValues()) {
+                BED_MATERIAL_MAP.put(color.getId(), new Material(Sheets.BED_SHEET, ResourceLocation.fromNamespaceAndPath(MOD_ID, "entity/bed/bed_" + color.getSerializedName())));
             }
         }
     }

@@ -111,6 +111,11 @@ public class ModBlocks {
         block = registerUnstackableBlock(name,
                 ()-> new ModShulkerBoxBlock(color, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_SHULKER_BOX).mapColor(color.getMapColor())));
         DYED_BLOCKS.get("shulker_box").put(colorName, block);
+
+        name = colorName + "_bed";
+        block = registerBlock(name,
+                ()-> new ModBedBlock(color, BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(color.getMapColor())));
+        DYED_BLOCKS.get("bed").put(colorName, block);
     }
 
     public static void register(IEventBus eventBus) {
@@ -125,6 +130,7 @@ public class ModBlocks {
         DYED_BLOCKS.put("candle", new HashMap<>());
         DYED_BLOCKS.put("candle_cake", new HashMap<>());
         DYED_BLOCKS.put("shulker_box", new HashMap<>());
+        DYED_BLOCKS.put("bed", new HashMap<>());
 
         for (ModDyeColor color : ModDyeColor.newDyeValues()) {
             registerDyedBlocks(color.getName(), color);

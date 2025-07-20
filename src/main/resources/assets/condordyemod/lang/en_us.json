@@ -193,5 +193,21 @@
   "block.condordyemod.fuchsia_shulker_box": "Fuchsia Shulker Box",
   "block.condordyemod.burgundy_shulker_box": "Burgundy Shulker Box",
   "block.condordyemod.coral_shulker_box": "Coral Shulker Box",
-  "block.condordyemod.light_brown_shulker_box": "Light Brown Shulker Box"
+  "block.condordyemod.light_brown_shulker_box": "Light Brown Shulker Box",
+  "block.condordyemod.crimson_bed": "Crimson Bed",
+  "block.condordyemod.vermilion_bed": "Vermilion Bed",
+  "block.condordyemod.amber_bed": "Amber Bed",
+  "block.condordyemod.chartreuse_bed": "Chartreuse Bed",
+  "block.condordyemod.light_green_bed": "Light Green Bed",
+  "block.condordyemod.jade_bed": "Jade Bed",
+  "block.condordyemod.olive_bed": "Olive Bed",
+  "block.condordyemod.teal_bed": "Teal Bed",
+  "block.condordyemod.turquoise_bed": "Turquoise Bed",
+  "block.condordyemod.azure_bed": "Azure Bed",
+  "block.condordyemod.indigo_bed": "Indigo Bed",
+  "block.condordyemod.mauve_bed": "Mauve Bed",
+  "block.condordyemod.fuchsia_bed": "Fuchsia Bed",
+  "block.condordyemod.burgundy_bed": "Burgundy Bed",
+  "block.condordyemod.coral_bed": "Coral Bed",
+  "block.condordyemod.light_brown_bed": "Light Brown Bed"
 }

@@ -32,4 +32,26 @@ public class ModBlockEntities {
                     ModBlocks.DYED_BLOCKS.get("shulker_box").get("burgundy").get(),
                     ModBlocks.DYED_BLOCKS.get("shulker_box").get("light_brown").get()
             ).build(null));
+
+    public static final Supplier<BlockEntityType<ModBedBlockEntity>> BED = BLOCK_ENTITY_TYPES.register(
+            "bed",
+            () -> BlockEntityType.Builder.of(
+                    ModBedBlockEntity::new,
+                    ModBlocks.DYED_BLOCKS.get("bed").get("crimson").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("vermilion").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("amber").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("chartreuse").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("olive").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("light_green").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("jade").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("teal").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("turquoise").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("azure").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("indigo").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("mauve").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("coral").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("fuchsia").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("burgundy").get(),
+                    ModBlocks.DYED_BLOCKS.get("bed").get("light_brown").get()
+            ).build(null));
 }
