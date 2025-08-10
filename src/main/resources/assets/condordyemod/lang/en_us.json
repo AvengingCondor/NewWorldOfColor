@@ -209,5 +209,7 @@
   "block.condordyemod.fuchsia_bed": "Fuchsia Bed",
   "block.condordyemod.burgundy_bed": "Burgundy Bed",
   "block.condordyemod.coral_bed": "Coral Bed",
-  "block.condordyemod.light_brown_bed": "Light Brown Bed"
+  "block.condordyemod.light_brown_bed": "Light Brown Bed",
+
+  "entity.condordyemod.sheep": "Sheep"
 }

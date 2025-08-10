@@ -1,6 +1,7 @@
 package net.avengingcondor.dyemod.item.custom;
 
 import com.google.common.collect.Maps;
+import net.avengingcondor.dyemod.entity.custom.ModSheepEntity;
 import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -29,20 +30,33 @@ public class ModDyeItem extends Item implements SignApplicator {
     /**
      * Try interacting with given entity. Return {@code InteractionResult.PASS} if nothing should happen.
      */
-    /*@Override
+    @Override
     public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity target, InteractionHand hand) {
-        if (target instanceof Sheep sheep && sheep.isAlive() && !sheep.isSheared() && sheep.getColor() != this.dyeColor) {
-            sheep.level().playSound(player, sheep, SoundEvents.DYE_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
-            if (!player.level().isClientSide) {
-                sheep.setColor(this.dyeColor);
-                stack.shrink(1);
+        if (target instanceof ModSheepEntity sheep) //when used on a sheep added by the mod, just changes color as normal
+        {
+            if (sheep.isAlive() && !sheep.isSheared() && sheep.getDyeColor() != this.dyeColor)
+            {
+                if (!player.level().isClientSide) {
+                    sheep.setColor(this.dyeColor);
+                    stack.shrink(1);
+                }
+                return InteractionResult.sidedSuccess(player.level().isClientSide);
             }
-
-            return InteractionResult.sidedSuccess(player.level().isClientSide);
         }
-
+        else if (target instanceof Sheep sheep) //if used on a vanilla sheep, it converts it to the mods sheep version to allow for proper color
+        {
+            if (sheep.isAlive() && !sheep.isSheared())
+            {
+                if (!player.level().isClientSide)
+                {
+                    ModSheepEntity.convertToNewColors(sheep, this.dyeColor);
+                    stack.shrink(1);
+                }
+                return InteractionResult.sidedSuccess(player.level().isClientSide);
+            }
+        }
         return InteractionResult.PASS;
-    }*/
+    }
 
     public ModDyeColor getDyeColor() {
         return this.dyeColor;

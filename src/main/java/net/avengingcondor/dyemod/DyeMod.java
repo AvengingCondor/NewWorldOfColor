@@ -2,9 +2,11 @@ package net.avengingcondor.dyemod;
 
 import net.avengingcondor.dyemod.block.ModBlocks;
 import net.avengingcondor.dyemod.entity.ModBlockEntities;
+import net.avengingcondor.dyemod.entity.ModEntities;
 import net.avengingcondor.dyemod.item.ModCreativeModeTabs;
 import net.avengingcondor.dyemod.item.ModItems;
 import net.avengingcondor.dyemod.render.ModBedBlockEntityRenderer;
+import net.avengingcondor.dyemod.render.ModSheepEntityRenderer;
 import net.avengingcondor.dyemod.render.ModShulkerBoxBlockEntityRenderer;
 import net.avengingcondor.dyemod.util.BedItemApplyRenderer;
 import net.avengingcondor.dyemod.util.ShulkerBoxItemApplyRenderer;
@@ -12,8 +14,13 @@ import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.animal.Sheep;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -60,6 +67,7 @@ public class DyeMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
+        ModEntities.ENTITY_TYPE.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -100,6 +108,10 @@ public class DyeMod
             event.registerBlockEntityRenderer(
                     ModBlockEntities.BED.get(),
                     ModBedBlockEntityRenderer::new
+            );
+            event.registerEntityRenderer(
+                    ModEntities.SHEEP.get(),
+                    ModSheepEntityRenderer::new
             );
         }
 
@@ -143,6 +155,16 @@ public class DyeMod
                     ModBlocks.DYED_BLOCKS.get("bed").get("burgundy").asItem(),
                     ModBlocks.DYED_BLOCKS.get("bed").get("coral").asItem()
             );
+        }
+
+        @SubscribeEvent
+        public static void onEntityAttributeCreate(EntityAttributeCreationEvent event) {
+            event.put(ModEntities.SHEEP.get(), Sheep.createAttributes().build());
+        }
+
+        @SubscribeEvent
+        public static void registerSpawnPlacements(RegisterSpawnPlacementsEvent event) {
+            event.register(ModEntities.SHEEP.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (animal, worldIn, reason, pos, random) -> false, RegisterSpawnPlacementsEvent.Operation.OR);
         }
 
         @SubscribeEvent
