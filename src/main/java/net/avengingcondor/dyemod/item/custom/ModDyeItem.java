@@ -36,6 +36,7 @@ public class ModDyeItem extends Item implements SignApplicator {
         {
             if (sheep.isAlive() && !sheep.isSheared() && sheep.getDyeColor() != this.dyeColor)
             {
+                sheep.level().playSound(player, sheep, SoundEvents.DYE_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
                 if (!player.level().isClientSide) {
                     sheep.setColor(this.dyeColor);
                     stack.shrink(1);
@@ -47,6 +48,7 @@ public class ModDyeItem extends Item implements SignApplicator {
         {
             if (sheep.isAlive() && !sheep.isSheared())
             {
+                sheep.level().playSound(player, sheep, SoundEvents.DYE_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
                 if (!player.level().isClientSide)
                 {
                     ModSheepEntity.convertToNewColors(sheep, this.dyeColor);

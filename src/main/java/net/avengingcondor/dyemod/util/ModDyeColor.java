@@ -129,6 +129,7 @@ public enum ModDyeColor implements StringRepresentable {
         return dyecolor != null ? dyecolor : fallback;
     }
 
+
     /*@Nullable
     public static ModDyeColor getColor(ItemStack stack) {
         if (stack.getItem() instanceof ModDyeItem)

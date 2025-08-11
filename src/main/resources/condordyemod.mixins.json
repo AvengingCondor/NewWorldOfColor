@@ -3,10 +3,9 @@
   "package": "net.avengingcondor.dyemod.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "VillagerBedInjection"
+
   ],
   "client": [
-
   ],
   "injectors": {
     "defaultRequire": 1

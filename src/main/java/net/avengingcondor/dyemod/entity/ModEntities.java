@@ -22,7 +22,7 @@ public class ModEntities {
     public static final Map<String, ResourceKey<LootTable>> SHEEP_LOOT = new HashMap<>();
 
     public static void register() {
-        for (ModDyeColor color : ModDyeColor.newDyeValues()) {
+        for (ModDyeColor color : ModDyeColor.values()) {
             SHEEP_LOOT.put(color.getSerializedName(), ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(DyeMod.MOD_ID, "entities/sheep/" + color.getSerializedName())));
         }
     }

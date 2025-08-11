@@ -3,6 +3,7 @@ package net.avengingcondor.dyemod;
 import net.avengingcondor.dyemod.block.ModBlocks;
 import net.avengingcondor.dyemod.entity.ModBlockEntities;
 import net.avengingcondor.dyemod.entity.ModEntities;
+import net.avengingcondor.dyemod.entity.custom.ModSheepEntity;
 import net.avengingcondor.dyemod.item.ModCreativeModeTabs;
 import net.avengingcondor.dyemod.item.ModItems;
 import net.avengingcondor.dyemod.render.ModBedBlockEntityRenderer;
@@ -20,7 +21,10 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.event.entity.EntityEvent;
+import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.event.entity.living.FinalizeSpawnEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -68,6 +72,7 @@ public class DyeMod
         ModBlocks.register(modEventBus);
         ModBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
         ModEntities.ENTITY_TYPE.register(modEventBus);
+        ModEntities.register();
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
