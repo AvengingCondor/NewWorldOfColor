@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/template_bed",
+  "textures": {
+    "particle": "condordyemod:block/light_brown_wool"
+  }
+}
