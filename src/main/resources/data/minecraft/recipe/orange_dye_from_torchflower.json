@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "orange_dye",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "result": {
+    "count": 0,
+    "id": "minecraft:air"
+  }
+}

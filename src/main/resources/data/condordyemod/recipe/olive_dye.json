@@ -1,20 +1,17 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "teal_dye",
+  "group": "olive_dye",
   "ingredients": [
     {
-      "tag": "c:dyes/blue"
-    },
-    {
       "tag": "c:dyes/green"
     },
     {
-      "tag": "c:dyes/green"
+      "tag": "c:dyes/white"
     }
   ],
   "result": {
-    "count": 3,
-    "id": "condordyemod:dye_teal"
+    "count": 2,
+    "id": "condordyemod:dye_olive"
   }
 }

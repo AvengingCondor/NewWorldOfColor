@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "burgundy_dye",
+  "ingredients": [
+    {
+      "item": "minecraft:torchflower"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "condordyemod:dye_burgundy"
+  }
+}

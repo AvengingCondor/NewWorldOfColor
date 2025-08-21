@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "teal_dye",
+  "group": "chartreuse_dye",
   "ingredients": [
     {
-      "tag": "c:dyes/blue"
+      "tag": "c:dyes/yellow"
     },
     {
-      "tag": "c:dyes/green"
+      "tag": "c:dyes/yellow"
     },
     {
       "tag": "c:dyes/green"
@@ -15,6 +15,6 @@
   ],
   "result": {
     "count": 3,
-    "id": "condordyemod:dye_teal"
+    "id": "condordyemod:dye_chartreuse"
   }
 }

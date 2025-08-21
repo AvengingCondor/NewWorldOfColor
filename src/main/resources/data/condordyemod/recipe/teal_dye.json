@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "teal_dye",
   "ingredients": [
     {
-      "item": "minecraft:cyan_dye"
+      "tag": "c:dyes/green"
     },
     {
-      "item": "minecraft:green_dye"
+      "tag": "c:dyes/cyan"
     }
   ],
   "result": {

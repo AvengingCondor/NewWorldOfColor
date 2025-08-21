@@ -1,12 +1,13 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
+  "group": "coral_dye",
   "cookingtime": 200,
-  "experience": 0.1,
+  "experience": 1.2,
   "ingredient": {
-    "item": "minecraft:warped_roots"
+    "item": "minecraft:brain_coral"
   },
   "result": {
-    "id": "condordyemod:dye_teal"
+    "id": "condordyemod:dye_coral"
   }
 }

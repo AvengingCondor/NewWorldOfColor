@@ -1,10 +1,10 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "amber_dye",
+  "group": "vermilion_dye",
   "ingredients": [
     {
-      "tag": "c:dyes/yellow"
+      "tag": "c:dyes/red"
     },
     {
       "tag": "c:dyes/orange"
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 2,
-    "id": "condordyemod:dye_amber"
+    "id": "condordyemod:dye_vermilion"
   }
 }

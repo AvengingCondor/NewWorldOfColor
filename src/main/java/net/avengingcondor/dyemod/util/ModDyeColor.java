@@ -5,6 +5,7 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.ByIdMap;
@@ -12,6 +13,7 @@ import net.minecraft.util.FastColor;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.MapColor;
 
 import javax.annotation.Nullable;
@@ -69,6 +71,7 @@ public enum ModDyeColor implements StringRepresentable {
     private final DyeColor fallback; //vanilla color closest to it for instances where it isn't feasible to rework for new colors, namely coloring sign text
     private final TagKey<Item> dyesTag;
     private final TagKey<Item> dyedTag;
+    private final TagKey<Block> dyedBlockTag;
 
     private ModDyeColor(int id, String name, int textureDefuseColor, MapColor mapColor, int fireworkColor, int textColor, DyeColor fallback) {
         this.id = id;
@@ -78,8 +81,9 @@ public enum ModDyeColor implements StringRepresentable {
         this.fireworkColor = fireworkColor;
         this.textColor = textColor;
         this.fallback = fallback;
-        this.dyesTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "dyes/" + name));
-        this.dyedTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "dyed/" + name));
+        this.dyesTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("condordyemod", "dyes/" + name));
+        this.dyedTag = ItemTags.create(ResourceLocation.fromNamespaceAndPath("condordyemod", "dyed/" + name));
+        this.dyedBlockTag = BlockTags.create(ResourceLocation.fromNamespaceAndPath("condordyemod", "dyed/" + name));
     }
 
     //I'm honestly not 100% sure what all of these next four do at the moment, just copying from the vanilla dye class,
@@ -118,6 +122,9 @@ public enum ModDyeColor implements StringRepresentable {
     public TagKey<Item> getDyedTag() {
         return dyedTag;
     }
+    public TagKey<Block> getDyedBlockTag() {
+        return dyedBlockTag;
+    }
     @Override
     public String toString() { return this.name;}
     @Override
@@ -128,19 +135,4 @@ public enum ModDyeColor implements StringRepresentable {
         ModDyeColor dyecolor = CODEC.byName(translationKey);
         return dyecolor != null ? dyecolor : fallback;
     }
-
-
-    /*@Nullable
-    public static ModDyeColor getColor(ItemStack stack) {
-        if (stack.getItem() instanceof ModDyeItem)
-            return ((ModDyeItem)stack.getItem()).getDyeColor();
-
-        for (int x = 0; x < LIGHT_BROWN.getId(); x++) {
-            ModDyeColor color = byID(x);
-            if (stack.is(color.getTag()))
-                return color;
-        }
-
-        return null;
-    }*/
 }

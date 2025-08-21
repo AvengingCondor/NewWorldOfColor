@@ -1,12 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "light_green_dye",
   "ingredients": [
     {
-      "item": "minecraft:green_dye"
+      "tag": "c:dyes/green"
     },
     {
-      "item": "minecraft:white_dye"
+      "tag": "c:dyes/green"
     }
   ],
   "result": {

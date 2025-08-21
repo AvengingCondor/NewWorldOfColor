@@ -4,14 +4,11 @@
   "group": "crimson_dye",
   "ingredients": [
     {
-      "tag": "c:dyes/red"
-    },
-    {
-      "tag": "c:dyes/black"
+      "item": "minecraft:crimson_roots"
     }
   ],
   "result": {
-    "count": 2,
+    "count": 1,
     "id": "condordyemod:dye_crimson"
   }
 }

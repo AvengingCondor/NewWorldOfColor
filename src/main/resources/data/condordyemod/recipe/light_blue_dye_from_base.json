@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "teal_dye",
+  "group": "light_blue_dye",
   "ingredients": [
     {
       "tag": "c:dyes/blue"
     },
     {
-      "tag": "c:dyes/green"
+      "tag": "c:dyes/white"
     },
     {
-      "tag": "c:dyes/green"
+      "tag": "c:dyes/white"
     }
   ],
   "result": {
     "count": 3,
-    "id": "condordyemod:dye_teal"
+    "id": "minecraft:light_blue_dye"
   }
 }

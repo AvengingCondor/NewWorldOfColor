@@ -281,12 +281,8 @@ public class ModSheepEntity extends Sheep {
                     return ModDyeColor.LIME;
                 else if (color1.equals(ModDyeColor.BLUE) || color2.equals(ModDyeColor.BLUE))
                     return ModDyeColor.CYAN;
-                else if (color1.equals(ModDyeColor.BROWN) || color2.equals(ModDyeColor.BROWN))
-                    return ModDyeColor.OLIVE;
-                else if (color1.equals(ModDyeColor.BLACK) || color2.equals(ModDyeColor.BLACK))
-                    return ModDyeColor.JADE;
                 else if (color1.equals(ModDyeColor.WHITE) || color2.equals(ModDyeColor.WHITE))
-                    return ModDyeColor.LIGHT_GREEN;
+                    return ModDyeColor.OLIVE;
                 else if (color1.equals(ModDyeColor.CYAN) || color2.equals(ModDyeColor.CYAN))
                     return ModDyeColor.TEAL;
             }
@@ -301,7 +297,7 @@ public class ModSheepEntity extends Sheep {
                     return ModDyeColor.LIGHT_BLUE;
                 else if (color1.equals(ModDyeColor.BROWN) || color2.equals(ModDyeColor.BROWN))
                     return ModDyeColor.LIGHT_BROWN;
-                else if (color1.equals(ModDyeColor.TEAL) || color2.equals(ModDyeColor.TEAL))
+                else if (color1.equals(ModDyeColor.CYAN) || color2.equals(ModDyeColor.CYAN))
                     return ModDyeColor.TURQUOISE;
                 else if (color1.equals(ModDyeColor.PURPLE) || color2.equals(ModDyeColor.PURPLE))
                     return ModDyeColor.MAUVE;
@@ -322,6 +318,8 @@ public class ModSheepEntity extends Sheep {
             }
             else if ((color1.equals(ModDyeColor.YELLOW) || color2.equals(ModDyeColor.YELLOW)) && (color1.equals(ModDyeColor.LIME) || color2.equals(ModDyeColor.LIME)))
                 return ModDyeColor.CHARTREUSE;
+            else if ((color1.equals(ModDyeColor.LIGHT_GREEN) || color2.equals(ModDyeColor.LIGHT_GREEN)) && (color1.equals(ModDyeColor.BLACK) || color2.equals(ModDyeColor.BLACK)))
+                return ModDyeColor.JADE;
         }
         return sheep.getRandom().nextBoolean() ? color1 : color2;
     }
