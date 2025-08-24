@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_candle",
+  "ingredients": [
+    {
+      "item": "minecraft:candle"
+    },
+    {
+      "tag": "condordyemod:dyes/amber"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "condordyemod:amber_candle"
+  }
+}

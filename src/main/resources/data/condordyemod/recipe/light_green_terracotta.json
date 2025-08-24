@@ -7,7 +7,7 @@
       "item": "minecraft:terracotta"
     },
     "X": {
-      "item": "condordyemod:dye_light_green"
+      "tag": "condordyemod:dyes/light_green"
     }
   },
   "pattern": [

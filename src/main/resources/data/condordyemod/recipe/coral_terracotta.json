@@ -7,7 +7,7 @@
       "item": "minecraft:terracotta"
     },
     "X": {
-      "item": "condordyemod:dye_coral"
+      "tag": "condordyemod:dyes/coral"
     }
   },
   "pattern": [

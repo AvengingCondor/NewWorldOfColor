@@ -7,7 +7,7 @@
       "item": "minecraft:terracotta"
     },
     "X": {
-      "item": "condordyemod:dye_amber"
+      "tag": "condordyemod:dyes/amber"
     }
   },
   "pattern": [

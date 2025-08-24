@@ -7,7 +7,7 @@
       "item": "minecraft:glass"
     },
     "X": {
-      "item": "condordyemod:dye_mauve"
+      "tag": "condordyemod:dyes/mauve"
     }
   },
   "pattern": [

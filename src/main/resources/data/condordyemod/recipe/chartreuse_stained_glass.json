@@ -7,7 +7,7 @@
       "item": "minecraft:glass"
     },
     "X": {
-      "item": "condordyemod:dye_chartreuse"
+      "tag": "condordyemod:dyes/chartreuse"
     }
   },
   "pattern": [

@@ -7,7 +7,7 @@
       "item": "minecraft:glass"
     },
     "X": {
-      "item": "condordyemod:dye_light_brown"
+      "tag": "condordyemod:dyes/light_brown"
     }
   },
   "pattern": [

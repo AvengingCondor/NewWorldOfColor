@@ -7,7 +7,7 @@
       "item": "minecraft:glass"
     },
     "X": {
-      "item": "condordyemod:dye_jade"
+      "tag": "condordyemod:dyes/jade"
     }
   },
   "pattern": [

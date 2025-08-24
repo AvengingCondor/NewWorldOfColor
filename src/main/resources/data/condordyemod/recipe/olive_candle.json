@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dyed_candle",
+  "ingredients": [
+    {
+      "item": "minecraft:candle"
+    },
+    {
+      "tag": "condordyemod:dyes/olive"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "condordyemod:olive_candle"
+  }
+}

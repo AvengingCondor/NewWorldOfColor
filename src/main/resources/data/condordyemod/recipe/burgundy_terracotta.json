@@ -7,7 +7,7 @@
       "item": "minecraft:terracotta"
     },
     "X": {
-      "item": "condordyemod:dye_burgundy"
+      "tag": "condordyemod:dyes/burgundy"
     }
   },
   "pattern": [

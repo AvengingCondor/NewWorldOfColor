@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "condordyemod:burgundy_terracotta"
+  },
+  "result": {
+    "id": "condordyemod:burgundy_glazed_terracotta"
+  }
+}
