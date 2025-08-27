@@ -6,6 +6,7 @@ import net.avengingcondor.dyemod.entity.ModEntities;
 import net.avengingcondor.dyemod.entity.custom.ModSheepEntity;
 import net.avengingcondor.dyemod.item.ModCreativeModeTabs;
 import net.avengingcondor.dyemod.item.ModItems;
+import net.avengingcondor.dyemod.recipe.ModRecipeSerializer;
 import net.avengingcondor.dyemod.render.ModBedBlockEntityRenderer;
 import net.avengingcondor.dyemod.render.ModSheepEntityRenderer;
 import net.avengingcondor.dyemod.render.ModShulkerBoxBlockEntityRenderer;
@@ -73,6 +74,7 @@ public class DyeMod
         ModBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
         ModEntities.ENTITY_TYPE.register(modEventBus);
         ModEntities.register();
+        ModRecipeSerializer.RECIPE_SERIALIZER.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

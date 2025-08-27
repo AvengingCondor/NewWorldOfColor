@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_light_brown_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "condordyemod:light_brown_wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "condordyemod:light_brown_carpet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_light_brown_wool"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "condordyemod:light_brown_carpet"
+    ]
+  }
+}

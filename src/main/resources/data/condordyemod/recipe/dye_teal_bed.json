@@ -1,0 +1,109 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "bed",
+  "ingredients": [
+    {
+      "tag": "condordyemod:dyes/teal"
+    },
+    [
+      {
+        "item": "minecraft:black_bed"
+      },
+      {
+        "item": "minecraft:blue_bed"
+      },
+      {
+        "item": "minecraft:brown_bed"
+      },
+      {
+        "item": "minecraft:cyan_bed"
+      },
+      {
+        "item": "minecraft:gray_bed"
+      },
+      {
+        "item": "minecraft:green_bed"
+      },
+      {
+        "item": "minecraft:light_blue_bed"
+      },
+      {
+        "item": "minecraft:light_gray_bed"
+      },
+      {
+        "item": "minecraft:lime_bed"
+      },
+      {
+        "item": "minecraft:magenta_bed"
+      },
+      {
+        "item": "minecraft:orange_bed"
+      },
+      {
+        "item": "minecraft:pink_bed"
+      },
+      {
+        "item": "minecraft:purple_bed"
+      },
+      {
+        "item": "minecraft:red_bed"
+      },
+      {
+        "item": "minecraft:yellow_bed"
+      },
+      {
+        "item": "minecraft:white_bed"
+      },
+      {
+        "item": "condordyemod:vermilion_bed"
+      },
+      {
+        "item": "condordyemod:amber_bed"
+      },
+      {
+        "item": "condordyemod:chartreuse_bed"
+      },
+      {
+        "item": "condordyemod:olive_bed"
+      },
+      {
+        "item": "condordyemod:light_green_bed"
+      },
+      {
+        "item": "condordyemod:jade_bed"
+      },
+      {
+        "item": "condordyemod:turquoise_bed"
+      },
+      {
+        "item": "condordyemod:azure_bed"
+      },
+      {
+        "item": "condordyemod:indigo_bed"
+      },
+      {
+        "item": "condordyemod:mauve_bed"
+      },
+      {
+        "item": "condordyemod:fuchsia_bed"
+      },
+      {
+        "item": "condordyemod:coral_bed"
+      },
+      {
+        "item": "condordyemod:burgundy_bed"
+      },
+      {
+        "item": "condordyemod:light_brown_bed"
+      },
+      {
+        "item": "condordyemod:crimson_bed"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "condordyemod:teal_bed"
+  }
+}

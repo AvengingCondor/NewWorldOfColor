@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "stained_glass",
+  "category": "misc",
+  "group": "stained_glass_pane",
   "key": {
     "#": {
       "item": "minecraft:glass_pane"

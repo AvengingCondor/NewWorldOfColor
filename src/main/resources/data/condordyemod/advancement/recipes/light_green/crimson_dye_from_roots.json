@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_roots": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:light_green_roots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "condordyemod:light_green_dye_from_roots"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_roots"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "condordyemod:light_green_dye_from_roots"
+    ]
+  }
+}
