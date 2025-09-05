@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_roots": {
+    "has_orange_dye": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:vermilion_roots"
+            "items": "minecraft:orange_dye"
           }
         ]
       },
@@ -13,20 +13,31 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "condordyemod:vermilion_dye_from_roots"
+        "recipe": "condordyemod:vermilion_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_red_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:red_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_roots"
+      "has_red_dye",
+      "has_orange_dye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "condordyemod:vermilion_dye_from_roots"
+      "condordyemod:vermilion_dye"
     ]
   }
 }

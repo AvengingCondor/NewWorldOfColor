@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_roots": {
+    "has_chorus": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:teal_roots"
+            "items": "minecraft:chorus_fruit"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "condordyemod:teal_dye_from_roots"
+        "recipe": "condordyemod:mauve_dye_from_chorus_fruit"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_roots"
+      "has_chorus"
     ]
   ],
   "rewards": {
     "recipes": [
-      "condordyemod:teal_dye_from_roots"
+      "condordyemod:mauve_dye_from_chorus_fruit"
     ]
   }
 }

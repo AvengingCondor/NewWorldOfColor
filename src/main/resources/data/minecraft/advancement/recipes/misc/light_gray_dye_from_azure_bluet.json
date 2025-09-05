@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_dye": {
+    "has_azure_bluet": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:black_dye"
+            "items": "minecraft:azure_bluet"
           }
         ]
       },
@@ -13,31 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "condordyemod:teal_dye"
+        "recipe": "minecraft:light_gray_dye_from_azure_bluet"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_red_dye": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:red_dye"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_red_dye",
-      "has_black_dye"
+      "has_azure_bluet"
     ]
   ],
   "rewards": {
     "recipes": [
-      "condordyemod:teal_dye"
+      "minecraft:light_gray_dye_from_azure_bluet"
     ]
   }
 }

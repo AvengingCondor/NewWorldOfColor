@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_dye": {
+    "has_yellow_dye": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:black_dye"
+            "items": "minecraft:yellow_dye"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "condordyemod:vermilion_dye"
+        "recipe": "condordyemod:vermilion_dye_from_base"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -32,12 +32,12 @@
     [
       "has_the_recipe",
       "has_red_dye",
-      "has_black_dye"
+      "has_yellow_dye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "condordyemod:vermilion_dye"
+      "condordyemod:vermilion_dye_from_base"
     ]
   }
 }

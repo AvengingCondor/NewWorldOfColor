@@ -2,7 +2,6 @@ package net.avengingcondor.dyemod.recipe;
 
 import net.avengingcondor.dyemod.block.custom.ModShulkerBoxBlock;
 import net.avengingcondor.dyemod.item.custom.ModDyeItem;
-import net.avengingcondor.dyemod.util.ModDyeColor;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

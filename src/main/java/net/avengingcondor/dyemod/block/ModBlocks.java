@@ -103,8 +103,11 @@ public class ModBlocks {
 
         DeferredBlock<Block> matchingCandle = block;
         name += "_cake";
-        block = registerBlock(name,
+        block = BLOCKS.register(name,
                 ()-> new CandleCakeBlock(matchingCandle.value(), BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CANDLE_CAKE)));
+        //"Candle Cake" needs a block model but *not* an item, so just using the basic register here and not custom method
+        /*block = registerBlock(name,
+                ()-> new CandleCakeBlock(matchingCandle.value(), BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CANDLE_CAKE)));*/
         DYED_BLOCKS.get("candle_cake").put(colorName, block);
 
         name = colorName + "_shulker_box";

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_roots": {
+    "has_white_dye": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:indigo_roots"
+            "items": "minecraft:white_dye"
           }
         ]
       },
@@ -13,20 +13,31 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "condordyemod:indigo_dye_from_roots"
+        "recipe": "condordyemod:mauve_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_purple_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:purple_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_roots"
+      "has_purple_dye",
+      "has_white_dye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "condordyemod:indigo_dye_from_roots"
+      "condordyemod:mauve_dye"
     ]
   }
 }

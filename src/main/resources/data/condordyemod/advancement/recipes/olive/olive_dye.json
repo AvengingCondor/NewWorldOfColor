@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_roots": {
+    "has_green_dye": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:olive_roots"
+            "items": "minecraft:green_dye"
           }
         ]
       },
@@ -13,20 +13,31 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "condordyemod:olive_dye_from_roots"
+        "recipe": "condordyemod:olive_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:white_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_roots"
+      "has_green_dye",
+      "has_white_dye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "condordyemod:olive_dye_from_roots"
+      "condordyemod:olive_dye"
     ]
   }
 }

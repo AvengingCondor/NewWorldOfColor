@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_roots": {
+    "has_blue_dye": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:turquoise_roots"
+            "items": "minecraft:blue_dye"
           }
         ]
       },
@@ -13,20 +13,31 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "condordyemod:turquoise_dye_from_roots"
+        "recipe": "condordyemod:teal_dye_from_base"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_green_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:green_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_roots"
+      "has_blue_dye",
+      "has_green_dye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "condordyemod:turquoise_dye_from_roots"
+      "condordyemod:teal_dye_from_base"
     ]
   }
 }

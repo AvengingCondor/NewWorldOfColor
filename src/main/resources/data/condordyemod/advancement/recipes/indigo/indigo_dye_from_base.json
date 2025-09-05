@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_dye": {
+    "has_blue_dye": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:black_dye"
+            "items": "minecraft:blue_dye"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "condordyemod:light_green_dye"
+        "recipe": "condordyemod:indigo_dye_from_base"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_red_dye",
-      "has_black_dye"
+      "has_blue_dye",
+      "has_red_dye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "condordyemod:light_green_dye"
+      "condordyemod:indigo_dye_from_base"
     ]
   }
 }
