@@ -1,25 +1,70 @@
 
-Installation information
+New World Of Color
 =======
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This mod adds 16 new dye colors to the game! Dyes are compatible with all vanilla use cases and
+make an effort to be as vanilla-friendly as possible. All recipes should unlock in the recipe
+book when you collect the needed ingredients.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+**The following features are missing for the new colors in this build (0.1.0):**
+* Banners
+* Dying leather/wolf armor
+* Dying pet collars
+* Fireworks
+* Llama carpets
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Dye Colors And Sources:
+--------------------------
+(All dyes can also be crafted using all of the basic dyes that make up their main color components, 
+ex. Teal is Cyan+Green but can also be made with Blue+Green+Green)
+* **Crimson** -- Darker shade of red
+  * Red + Black
+  * Crafting Crimson Roots gives 1 dye
+* **Vermilion** -- Red-Orange
+  * Red + Orange
+* **Amber** -- Yellow-Orange
+  * Red + Yellow
+  * Smelting Honeycomb gives 1 dye
+* **Chartreuse** -- Yellow-Green
+  * Lime + Yellow
+* **Olive** -- Lighter shade of vanilla green
+  * Green + White
+* **Spring Green** -- Brighter, more vibrant shade of green than the vanilla dye
+  * Green + Green
+* **Jade** -- Vibrant dark green
+  * Spring Green + Black
+* **Teal** -- Blue-Green
+  * Cyan + Green
+  * Crafting Warped Roots gives 1 dye
+* **Turquoise** -- Lighter Blue-Green
+  * Cyan + White
+* **Azure** -- Medium Blue
+  * Blue + White
+  * Crafting Azure Bluets gives 1 dye
+* **Indigo** -- Darker, more blue shade of purple
+  * Purple + Blue
+* **Mauve** -- Light Purple
+  * Purple + White
+  * Crafting Chorus Fruit gives 1 dye
+* **Fuchsia** -- Dark Magenta
+  * Purple + Crimson
+  * Crafting Spore Blossoms gives 4 dye
+* **Coral** -- Dark, somewhat orangey pink
+  * Orange + Pink
+  * Smelting Brain Coral (Normal or fans, not blocks) gives 1 dye
+* **Burgundy** -- Dark, reddish purple. You might also know the color as "wine" or "maroon"
+  * Crafting Torchflower gives 4 dye
+  * (Cannot by made by mixing colors)
+* **Light Brown** -- Light Brown
+  * Brown + White
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+Vanilla Tweaks:
+--------------------------
+The mod makes a very small number of tweaks to vanilla recipes/textures, all of which can be easily undone/overrided with a resource pack if needed:
+* Lime Dye had its recipe changed to not overlap with Olive, which had no other logical recipe
+  * Lime Dye is now made with: Green + Yellow dye
+* Light Blue dye had its recipe changed to make room for Azure as a step between it and normal blue
+  * Light Blue Dye is now made with: Azure + White dye
+* The Azure Bluet texture was updated to give the flowers a noticeable blue color(without straying too far from vanilla, it's still subtle), and they now craft into Azure dye instead of Light Gray
+  * (The real life flowers are in fact most often blue, hence azure being in the name, so I honestly don't know why they didn't already reflect that and give light blue dye in vanilla)
+* The Torchflower texture was updated to further emphasis the reddish-purple elements to make the burgundy dye connection clearer
