@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.Unique;
 
 import java.util.Map;
 
+//UNUSED, SAVED FOR REFERENCE
 @Mixin(Sheep.class)
 public abstract class SheepNewColorInjection extends Animal /*implements ModSheepUtil*/ {
 

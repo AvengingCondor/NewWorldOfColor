@@ -11,7 +11,7 @@ loaderVersion="[2,)" #mandatory
 
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
-license="MIT"
+license="CC0-1.0"
 
 # A URL to refer people to when problems occur with this mod
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
@@ -23,7 +23,7 @@ license="MIT"
 modId="condordyemod" #mandatory
 
 # The version number of the mod
-version="1.0.0" #mandatory
+version="0.1.0" #mandatory
 
 # A display name for the mod
 displayName="New World Of Color" #mandatory
@@ -44,11 +44,11 @@ displayName="New World Of Color" #mandatory
 authors="AvengingCondor" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''TODO'''
+description='''Adds 16 new dye colors to expand the vanilla color pallette!'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 [[mixins]]
-config="condordyemod.mixins.json"
+#config="condordyemod.mixins.json"
 
 # The [[accessTransformers]] block allows you to declare where your AT file is.
 # If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg

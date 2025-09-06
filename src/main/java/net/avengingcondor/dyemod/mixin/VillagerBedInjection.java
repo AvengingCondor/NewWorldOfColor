@@ -19,6 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.Set;
 
+//UNUSED, SAVED FOR REFERENCE
 @Mixin(PoiTypes.class)
 public class VillagerBedInjection {
     @Shadow

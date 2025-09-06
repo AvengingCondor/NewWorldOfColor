@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//UNUSED, SAVED FOR REFERENCE
 @Mixin(DyeColor.class)
 public class DyeColorInjection {
     @Shadow
@@ -41,5 +42,5 @@ public class DyeColorInjection {
         }
         $VALUES = dyeColors.toArray(new DyeColor[0]);
     }
-    //unfortunately, this throws an error in neoforged and I'm not sure how to get around it, scrapping this concept for now
+    //unfortunately, this throws an error in neoforge and I'm not sure how to get around it, scrapping this concept for now
 }
